@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:reloginho;
+}
+@font-face {
+    font-family:reloginho;
+    src: url("DS-DIGIT.TTF");
+}
+h1{
+    color: cornflowerblue;
+    font-size: 55px;
+}
+.container{
+     height: 100vh; /*fica na altura de todo viewport */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 30px;
+     background: rgba(0, 0, 0, 0.8);
+}
+.timer{
+    display: flex;
+    font-size: 50px;
+    color: cornflowerblue;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: cornflowerblue;
+    min-width: 90px;
+}
+.separador{
+    font-size: 60px;
+    padding: 0 10px;
+    color: cornflowerblue;
+}
+#milesegundos{
+    font-size: 30px;
+    color: white;
+}
+.buttons{
+    display: flex;
+    gap: 16px;
+}
+.button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.button:hover{
+     transform:scale(1.1); /*quando passa o mouse por cima, ele aumenta 10% ou seja o nome fica um pouco maior  */
+    color: white;
+    background: cornflowerblue;
+
+}
+#btnStart{
+    background: cornflowerblue;
+    color: white;
+}
+#btnReset{
+    background: cornflowerblue;
+    color: white;
+}
+#btnPause,#btnContinue{
+    display: none;
+}
